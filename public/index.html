@@ -19,54 +19,46 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="bg-black py-6 lg:py-12 text-gaga-grey font-gemunu uppercase">
-        <!-- Header Container -->
-        <div class="container mx-auto flex items-center justify-between space-x-8 lg:space-x-16">
-            <!-- Logo -->
-            <a href="#"
-                class="pl-4 lg:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gaga-red to-gaga-grey">GEGA</a>
-            <!-- Mobile Menu -->
-            <div class="block md:hidden pr-4">
+<!-- Header Section -->
+<header class="bg-black py-6 lg:py-12 text-gaga-grey font-gemunu uppercase">
+    <!-- Header Container -->
+    <div class="container mx-auto flex items-center justify-between lg:justify-start space-x-8 lg:space-x-16 px-2">
+        <!-- Logo -->
+        <a href="#" class="pl-4 lg:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gaga-red to-gaga-grey">GEGA</a>
+        <!-- Mobile Menu Button -->
+        <div class="block lg:hidden">
+            <button id="mobile-menu-btn" class="text-gaga-grey focus:outline-none">
                 <div class="space-y-1 cursor-pointer">
                     <div class="bg-gaga-grey w-8 h-1 rounded-full"></div>
                     <div class="bg-gaga-grey w-8 h-1 rounded-full"></div>
                     <div class="bg-gaga-grey w-8 h-1 rounded-full"></div>
                 </div>
-            </div>
-            <!-- Navigation -->
-            <nav class="hidden md:flex justify-between flex-1 pr-4 lg:pr-0">
-                <!-- Menu -->
-
-                <ul class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
-                    <li><a href="#" class="hover:text-gaga-red transition duration-500">movies</a></li>
-                    <li><a href="#" class="hover:text-gaga-red transition duration-500">celebrites</a></li>
-                    <li><a href="#" class="hover:text-gaga-red transition duration-500">blog</a></li>
-                    <li><a href="#" class="hover:text-gaga-red transition duration-500">news</a></li>
-                    <li><a href="#" class="hover:text-gaga-red transition duration-500">about</a></li>
-                </ul>
-
-                <!-- Login Area -->
-                <div class="flex items-center space-x-4 lg:space-x-8">
-                    <form>
-                        <div class="group border-r px-4 mx-4 py-1 border-gaga-red">
-                            <input type="text"
-                                class="opacity-0 group-hover:opacity-100 transition duration-500 bg-transparent border-b border-gaga-red focus:outline-none w-24 lg:w-44">
-                            <button class="-ml-4 group-hover:ml-0 transition duration-500"><i
-                                    class="fas fa-search group-hover:text-gaga-red transition duration-500"></i></button>
-                        </div>
-                    </form>
-                    <!-- Singnup Area -->
-                    <div class="flex items-center space-x-8 lg:text-lg">
-                        <a href="#">Login</a>
-                        <a href="#"
-                            class="bg-gaga-red px-3 py-1 hover:bg-rose-600 hover:text-gaga-grey cursor-pointer transition duration-500 whitespace-nowrap">Sign
-                            Up</a>
-                    </div>
-                </div>
-            </nav>
+            </button>
         </div>
-    </header>
+        <!-- Navigation -->
+        <nav id="main-menu" class="hidden lg:flex justify-between flex-1 pr-4 lg:pr-0">
+            <!-- Menu -->
+            <ul class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+                <li><a href="#" class="hover:text-gaga-red transition duration-500">movies</a></li>
+                <li><a href="#" class="hover:text-gaga-red transition duration-500">celebrities</a></li>
+                <li><a href="#" class="hover:text-gaga-red transition duration-500">blog</a></li>
+                <li><a href="#" class="hover:text-gaga-red transition duration-500">news</a></li>
+                <li><a href="#" class="hover:text-gaga-red transition duration-500">about</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-black transition-all duration-500 ease-in-out">
+        <ul class="text-gaga-grey text-xl px-2 py-4 space-y-4">
+            <li><a href="#" class="hover:text-gaga-red transition duration-500 block">movies</a></li>
+            <li><a href="#" class="hover:text-gaga-red transition duration-500 block">celebrities</a></li>
+            <li><a href="#" class="hover:text-gaga-red transition duration-500 block">blog</a></li>
+            <li><a href="#" class="hover:text-gaga-red transition duration-500 block">news</a></li>
+            <li><a href="#" class="hover:text-gaga-red transition duration-500 block">about</a></li>
+        </ul>
+    </div>
+</header>
+
     <!-- Hero Section -->
     <section class="h-64 md:h-96 lg:h-128 group relative">
         <!-- Hero Image -->
