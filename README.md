@@ -1,5 +1,5 @@
 
-# Film Sitesi Landing Page
+# Tailwind Film Sitesi Landing Page
 
 Merhaba! Tailwind CSS kullanılarak tasarlanmış bir film sitesi konseptli landing page projesiyle karşınızdayım. Net, modern ve etkileyici bir tasarımı olan bu proje, film tutkunlarını hemen kendine çekiyor.
 
